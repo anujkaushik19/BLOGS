@@ -1,9 +1,18 @@
-import React from 'react'
+import React from "react";
+import classes from "./blogPage.module.css";
+import CardList from "@/components/cardlist/CardList";
+import Menu from "@/components/menu/Menu";
 
-function blogPage() {
+function BlogPage() {
   return (
-    <div>blogPage</div>
-  )
+    <div className={classes.container}>
+      <h1 className={classes.heading}>Blog Page</h1>
+      <div className={classes.contentcontainer}>
+        <CardList />
+        <Menu />
+      </div>
+    </div>
+  );
 }
 
-export default blogPage
+export default BlogPage;
